@@ -25,7 +25,7 @@ s1_s2=mixtwo(s1,s2)
 pylab.figure(1)                # the first figure
 pylab.subplot(211)             # the first subplot in the first figure
 pylab.plot(t, y)
-pylab.subplot(212)             # the first subplot in the first figure
+pylab.subplot(212)             # the second subplot in the first figure
 
 pylab.plot(t, s1_s2)
 
