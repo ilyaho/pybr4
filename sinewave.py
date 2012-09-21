@@ -10,6 +10,23 @@ def mksine( f,l,samp_freq=44100):
     y=np.sin(w * t)
     return (t,y)
 
-(t,y)=mksine(440,10)
+
+
+def mixtwo(s1,s2):
+    return (s1[1]*.5)+(s2[1]*.5)
+l=3
+(t,y)=mksine(440,l)
+
+s1=mksine(440,l)
+s2=mksine(443,l)
+
+s1_s2=mixtwo(s1,s2)
+
+pylab.figure(1)                # the first figure
+pylab.subplot(211)             # the first subplot in the first figure
 pylab.plot(t, y)
+pylab.subplot(212)             # the first subplot in the first figure
+
+pylab.plot(t, s1_s2)
+
 pylab.show()
