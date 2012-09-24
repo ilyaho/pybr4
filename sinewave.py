@@ -11,6 +11,12 @@ def mksine( f,l,samp_freq=44100):
     return (t,y)
 
 
+def make_stereo_wave(s1,s2):
+    """
+    we need to use someone elses code
+    """
+    pass
+
 
 def mixtwo(s1,s2):
     return (s1[1]*.5)+(s2[1]*.5)
